@@ -1,0 +1,35 @@
+//classs
+
+//Rextester.Program.Main is the entry point for your code. Don't change it.
+//Microsoft (R) Visual C# Compiler version 2.9.0.63208 (958f2354)
+
+using System;
+
+namespace RectecngularApplication{
+    class Rectangle{
+    
+        double length;
+        double width;
+        
+        public void AcceptDetails(){
+            length = 4.5;
+            width = 5.7;
+        }
+        public double getArea(){
+            return length * width;
+        }
+        public void Display(){
+            Console.WriteLine("Length: {0}", length);
+            Console.WriteLine("Width: {0}", width);
+            Console.WriteLine("Area: {0}", getArea());
+        }  
+    }
+    class Execute{
+        static void Main(string[]args){
+            Rectangle r = new Rectangle();
+            r.AcceptDetails();
+            r.Display();
+            Console.ReadLine();
+        }
+    }
+}
